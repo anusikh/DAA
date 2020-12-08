@@ -36,9 +36,9 @@ int Count_Subset_Sum(int arr[], int sum, int n)
 
 int main()
 {
-    int arr[]={2,3,5,6,8,10};
+    int arr[]={0,2,3,5,6,8,10}; // Always start with 0
     int sum=8;
-    int n=6;
+    int n=sizeof(arr)/sizeof(int);
 
     cout<<Count_Subset_Sum(arr,sum,n)<<endl;
     return 0;
