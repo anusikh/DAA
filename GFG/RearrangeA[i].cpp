@@ -1,10 +1,7 @@
 //Rearrange an array such that arr[i] = i
 
 #include<bits/stdc++.h>
-using namespace  std;
-
-// -1, -1, 2, 1, 9, 3, 6, -1, 4, -1
-//x = 2 and y
+using namespace std;
 
 void func(int arr[], int n) //n is the length of the array
 {
