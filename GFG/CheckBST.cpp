@@ -8,7 +8,8 @@ bool inBST(Node *root,int min,int max)
     return false;
 }
 
-bool checkBST(Node* root) {
+bool checkBST(Node* root) 
+{
     if(!root)
         return true;
     if(inBST(root->left,0,root->data) && inBST(root->right,root->data,10000))
