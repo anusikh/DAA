@@ -1,3 +1,5 @@
+//Applicable for DAG(Direct ACyclic Graph)
+
 #include<bits/stdc++.h>
 using namespace std;
 
