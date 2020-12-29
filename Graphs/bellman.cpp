@@ -61,6 +61,8 @@ void bellman(vector<edge>& Edges)
 		cout<<"U->V: "<<parent[i]<<"->"<<i<<"  Cost to reach "<<parent[i]<<"from source 0 = "<<value[i]<<"\n";
 }
 
+
+
 int main()
 {
 	cout<<"Enter The vertices and edges:"<<endl;

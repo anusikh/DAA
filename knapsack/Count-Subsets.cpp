@@ -36,7 +36,7 @@ int Count_Subset_Sum(int arr[], int sum, int n)
 
 int main()
 {
-    int arr[]={0,2,3,5,6,8,10}; // Always start with 0
+    int arr[]={2,3,5,6,8,10}; // Always start with 0
     int sum=8;
     int n=sizeof(arr)/sizeof(int);
 

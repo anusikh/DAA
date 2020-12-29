@@ -19,7 +19,7 @@ int knapsack(int dist[], int profits[], int k, int n)
 
 int main()
 {
-    int dist[]={0,2,4,5,6};
+    int dist[]={2,4,5,6};
     int profits[]={0,10,20,40,80};
     int k=2;
     int n=5;
