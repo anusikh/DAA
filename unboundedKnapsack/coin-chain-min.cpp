@@ -29,7 +29,7 @@ int coin_change(int coin[], int sum, int n)
 		for(int j=1;j<sum+1;j++)
 		{
 			if(coin[i-1]<=j)
-				t[i][j] = std::max(t[i][j-coin[i-1]]+1,t[i-1][j]);
+				t[i][j] = std::min(t[i][j-coin[i-1]]+1,t[i-1][j]);
 			else
 				t[i][j] = t[i-1][j];
 		}

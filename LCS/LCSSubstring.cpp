@@ -5,6 +5,8 @@ using namespace std;
 int LCSubstring(char *X, char *Y, int m, int n)
 {
 	int t[m][n];
+	int res = 0;
+
 	for(int i=0;i<m+1;i++)
 	{
 		for(int j=0;j<n+1;j++)
@@ -21,6 +23,8 @@ int LCSubstring(char *X, char *Y, int m, int n)
 			if(X[i-1]==Y[j-1])
 			{
 				t[i][j] = 1+t[i-1][j-1];
+				res = std::max(res, t[i][j]);
+
 			}
 			else
 			{
