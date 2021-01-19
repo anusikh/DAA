@@ -44,7 +44,6 @@ void bellman(vector<edge>& Edges)
 			break;
 	}
 
-
 	for(int j=0;j<E;j++)
 	{
 		int u = Edges[j].src;
