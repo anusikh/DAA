@@ -125,6 +125,32 @@ void flip(Node *root)
     root->r = temp;
 }
 
+
+//Find the diameter of the tree
+//First make the height() function
+
+int height(Node *root)
+{
+    if(root==nullptr)
+        return 0;
+        
+    return 1+max(height(root->l), height(root->r));
+}
+
+int diameter(Node *root)
+{
+    if(root==nullptr)
+        return 0;
+    
+    int lheight = height(root->l);
+    int rheight = height(root->r);
+    
+    int ldiameter = diameter(root->l);
+    int rdiameter = diameter(root->r);
+    
+    return max(lheight+rheight+1, max(ldiameter, rdiameter));
+}
+
 int main()
 {
 	Node *root = newNode(1);
@@ -138,9 +164,15 @@ int main()
     // travel(root);
     
     inorder(root);
-    flip(root);
+    // flip(root);
     cout<<endl;
-    inorder(root);
+    // inorder(root);
+    
+    // cout<<height(root);
+    
+    cout<<"diameter: "<<diameter(root);
+    
+    
     
     
     return 0;
